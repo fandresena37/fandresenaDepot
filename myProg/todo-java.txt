@@ -1,0 +1,21 @@
+/usr/lib/jvm
+
+J2SDKDIR="/usr/lib/jvm/jdk1.8.0_151"
+
+J2REDIR="/usr/lib/jvm/jdk1.8.0_151/jre"
+
+JAVA_HOME="/usr/lib/jvm/jdk1.8.0_151"
+
+DERBY_HOME="/usr/lib/jvm/jdk1.8.0_151/db"
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_151/bin/java" 0
+
+# sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_151/bin/javac" 0
+
+# sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_151/bin/java
+
+# sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_151/bin/javac
+
+update-alternatives --list java
+
+# update-alternatives --list javac

@@ -1,0 +1,16 @@
+.bouton{
+background:linear-gradient(180deg,blue,green);
+color:black;
+
+}
+.bouton:hover{
+background-color:rgb(255,120,120);
+color:white;
+border-radius:10px;
+border-color:red;
+}
+.bouton:active{
+background-color:red;
+color:white;
+}
+
