@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>formulaire</title>
+        <style>
+            .entnom{
+                height: 40px;
+                width: 300px;
+                margin-left: 90px;
+            }
+            .entPrenom{
+                height: 40px;
+                width: 300px;
+                margin-left: 90px;
+            }
+            .envoie{
+                background-color: rgb(133, 233, 94);
+                height: 45px;
+                width: 95px;
+                color:black;
+                margin-top: 10px;
+                position: absolute;
+                top:1300px;
+                left:600px
+            }
+            .envoie:hover{
+                background-color: rgb(82, 231, 24);
+                color:black;
+            }
+            .envoie:active{
+                background-color: green;
+                color:black;
+            }
+            .date{
+                height: 40px;
+                width: 90px;
+                margin-left: 90px;
+            }
+            .date1{
+                height: 35px;
+                width: 90px;
+            }
+            h3{
+                margin-left: 20px;
+            }
+            span{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <img style ="position: absolute;left:1100px;top:10px;height: 150px;width: 150px;" src="science.jpg"/>
+        <img style ="position: absolute;left:10px;top:10px;height: 150px;width: 150px;" src="misa.png"/>
+        <img style ="position: absolute;left:910px;top:10px;height: 150px;width: 150px;" src="Faculte-des-Sciences-Madagascar_organismecontactpublicationimagebig.gif"/>
+        <h1 style="text-align: center;color: rgb(14, 13, 13);position: absolute;left:290px;top:170px;">FORMULAIRE D'INSCRIPTION A LA <span>MIT</span></h1>
+        <div style="box-shadow:10px 10px 6px black;background-color: rgb(153, 147, 147); height: 1400px; width: 850px; border-radius: 10px;position: absolute;left:240px;top:300px">
+        <form action="" method="post" >
+            <h3 style="margin-top: 80px;margin-left: 60px;">Nom</h3>
+            <input class="entnom" type="text" name="texte" placeholder="entrez votre nom"/>
+            <h3 style="margin-top: 70px;margin-left: 60px;">Prenom</h3>
+            <input class= "entPrenom" type="password" placeholder="entrez votre prenom" value=""/>
+            <h3 style="margin-top: 70px;margin-left: 60px;">Date de naissance</h3>
+            <input style="margin-left: 90px;"class ="date1" type="text" name="jour" placeholder="jour"/>
+            <select style="margin-left: 5px;"class="date" name="mois">
+                <option value="1">janvier</option>
+                <option value="2">Fevrier</option>
+                <option value="3">Mars</option>
+                <option value="4">Avril</option>
+                <option value="5">Mai</option>
+                <option value="6">Juin</option>
+                <option value="7">Juillet</option>
+                <option value="8">Août</option>
+                <option value="9">Septembre</option>
+                <option value="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Decembre</option>
+            </select> 
+            <input style="margin-left: 5px;"class="date1" type="text" name="annees" placeholder="annees"/>
+            <h3 style="position: absolute;top:370px;left: 580px;">Lieu de naissance</h3>
+            <input style="margin-left: 20px;height: 35px;width: 300px;" type="text" name="lieu de naissance" placeholder="lieu de naissance"/>
+            <h3 style="margin-top: 70px;margin-left: 60px;">Sexe</h3>
+                <input style="margin-left: 90px;"type="radio" id="femme" name="sexe" value="femme"/>
+                    <label for="femme">femme</label>
+                <input type="radio" id="homme"name="sexe" value="homme"/>
+                    <label for="homme">homme</label>
+            <h3 style="margin-top: 70px;margin-left: 60px;">Années d'obtention du Bacc</h3>
+            <input class="entnom" type="text" name="Bacc" placeholder="annees obtention Bacc"/>
+            <h3 style="margin-top: 70px;margin-left: 60px;">Serie au Bacc</h3>
+            <input style ="height: 40px;width: 100px;margin-left: 90px;" name="serie" placeholder="S"/>
+            <h3 style="margin-top: 70px;margin-left: 60px;">Contact</h3>    
+                <input class="entnom" type="text" name="contact" placeholder="034 00 000 00"/>    
+            <h3 style="margin-top: 70px;margin-left: 60px;">Email</h3>
+            <input class ="entnom" type="email" name="email" placeholder="entrez votre email"/></br>
+            </br><input class="envoie" type="submit" name="valider" value="valider"/>
+        </form>
+    </div>
+    </body>
+</html>
