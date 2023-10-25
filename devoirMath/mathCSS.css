@@ -1,0 +1,23 @@
+.input{
+    width: 400px;
+}
+body{
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.borne{
+    height: 40px;
+    width: 200px;
+}
+button{
+    height: 50px;
+    width: 100px;
+}
+.bouton{
+    height: 40px;
+    width: 400px;
+}
