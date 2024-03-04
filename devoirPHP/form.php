@@ -3,7 +3,7 @@
     <head>
         <title>modifications</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="tables.css"/>
+        <link rel="stylesheet" href="tables1.css"/>
     </head>
     <body>
         <?php

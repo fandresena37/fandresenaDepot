@@ -3,7 +3,7 @@
     <head>
         <title>table</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="tables.css"/>
+        <link rel="stylesheet" href="tables1.css"/>
     </head>
     <body class="bodyTab">
         <h2 style="font-family: Arial, Helvetica, sans-serif;margin-top:30px;">TABLES DE MULTIPLICATIONS</h2>
@@ -72,6 +72,7 @@
             mampiseho($a,$b,$result,$len);
         }
         function mampiseho($a,$b,$result,$len){
+            if($len>=0){
             echo "<table class=\"tableau\">";
             echo "<tr class=\"tete\"><td><div class=\"td\">A</div></td><td><div class=\"td\">B</div></td><td><div class=\"td\">A*B</div></td><td><div class=\"action\">Action</div></td>";
             for($i=0;$i<=$len;$i++){
@@ -103,6 +104,10 @@
             </tr>";
         }
         echo "</table>";
+        }
+        else{
+            header("Location: http://www.iptables.mg/Formtable.html");
+        }
         }
         ?>
     </body>
