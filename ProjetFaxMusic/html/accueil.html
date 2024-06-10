@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Img/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../bootstrap-5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../package/swiper-bundle.css" />
+    <link rel="stylesheet" href="../css/accueilCSS.css">
+    <link rel="stylesheet" href="../css/ResponsiveCSS.css">
+    <title>Accueil:fax Music</title>
+</head>
+<body>
+    <script src="../js/chargement.js"></script>
+    <div class="menu-slide">
+        <div class="logo">
+            <img src="../Img/logo-removebg-preview.png" alt="">
+            <h2 style="color: white;">Fax Music</h2>
+            <button onclick="hiddenMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                </svg>
+            </button>
+        </div>
+        <ul>
+            <a href="#nouveau-arrivage"><li onclick="hiddenMenu()">Nouveau Arrivage</li></a>
+            <a href="#best-intru"><li onclick="hiddenMenu()">plus vendu</li></a>
+            <a href="#best-price"><li onclick="hiddenMenu()">Guitars</li></a>
+            <a href="#best-price"><li onclick="hiddenMenu()">Batteries</li></a>
+            <a href="#best-price"><li onclick="hiddenMenu()">Orchestrales</li></a>
+            <a href="#footer"><li onclick="hiddenMenu()">Contact</li></a>
+            <li onclick="deconnexion()">deconnexion</li>
+        </ul>
+        <div class="d-flex align-items-center flex-column">
+            <div class="para-wel">
+                <p>Welcome to Our Musical Instruments Store!</p>
+            </div>
+            <div class="para-cont d-flex flex-column align-items-center">
+                <p>faxMusic@gmail.com</p>
+                <p>034 16 744 62</p> 
+            </div>
+        </div>
+    </div>
+    <div class="cart" onclick="showCart()">
+        <div class="cart-nb justify-content-center align-items-center">
+        </div>
+        <button class="btn-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"/>
+            </svg>
+        </button>    
+    </div>
+    <section class="back-fixed"></section>
+    <header>
+        <section class="head-welcome">
+            <div class="welcome-center">
+                <div class="para-wel">
+                    <p>Welcome to Our Musical Instruments Store!</p>
+                </div>
+                <div class="para-cont">
+                    <p>faxMusic@gmail.com</p>
+                    <p>034 16 744 62</p> 
+                </div>
+            </div>
+        </section>
+        <section class="justify-content-center align-items-center head-nav d-flex">
+            <nav class="nav-center">
+                <div class="logo">
+                    <img src="../Img/logo-removebg-preview.png" alt="">
+                    <h2 style="color: white;">Fax Music</h2>
+                </div>
+                <div class="ul-nav">
+                    <ul>
+                        <a href="#nouveau-arrivage"><li>Nouveau Arrivage</li></a>
+                        <a href="#best-intru"><li>plus vendu</li></a>
+                        <a href="#best-price"><li>Guitars</li></a>
+                        <a href="#best-price"><li>Batteries</li></a>
+                        <a href="#best-price"><li>Orchestrales</li></a>
+                        <a href="#footer"><li>Contact</li></a>
+                        <li onclick="deconnexion()">deconnexion</li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="btn-menu" onclick="showMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"/>
+                </svg>
+            </button>
+        </section>
+    </header>
+    <main>
+        <section class="princ-white">
+            <section class="main-princ d-flex justify-content-center">
+                <section class="main-center d-flex flex-column justify-content-center">
+                    <label>MUSICAL INSTRUMENTS STORE</label>
+                    <p>Nous avons tout ce dont <span style="color:rgb(4, 154, 204);">tout musicien</span> peut avoir besoin.</p>
+                    <hr>
+                    <label class="lab-main">Instruments, équipements et fournitures à partir de <span style="color:green;font-weight: bold;"> $ 50,00</span></label>
+                    <a href="#best-price"><button class="btn btn-primary">acheter</button></a>
+                </section>
+            </section>
+            <section class="service d-flex justify-content-center">
+                <div class="service-items d-flex justify-content-center align-items-center flex-column">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" style="max-width:100%" height="100%"><g ><path d="M23.911,12.024c-0.005-0.018-0.004-0.037-0.011-0.053c-0.02-0.049-0.05-0.093-0.087-0.13c0,0,0-0.001-0.001-0.001   l-4.629-4.609c-0.075-0.074-0.176-0.116-0.282-0.116l-3.044-0.002V5.206c0-0.856-0.696-1.553-1.553-1.553H1.624   c-0.856,0-1.554,0.697-1.554,1.553L0.069,16.737c0,0.856,0.697,1.553,1.554,1.553h1.611c0.191,1.166,1.205,2.057,2.424,2.057   s2.232-0.892,2.424-2.057h8.665c0.191,1.166,1.205,2.057,2.423,2.057c1.219,0,2.232-0.892,2.424-2.057h1.926   c0.221,0,0.399-0.179,0.4-0.399l0.012-5.766l0,0c0,0,0,0,0,0C23.931,12.089,23.92,12.057,23.911,12.024z M22.562,11.724H20.14   l0.263-0.675c0.08-0.206-0.021-0.438-0.228-0.518s-0.438,0.021-0.519,0.228l-0.376,0.965h-3.387V7.913l2.844,0.003L22.562,11.724z    M1.624,4.453h12.682c0.415,0,0.752,0.338,0.752,0.753v2.306c0,0.052,0.014,0.102,0.035,0.148v6.045H0.87l0-4.069h7.04L7.91,10.052   c-0.003,0.421,0.249,0.607,0.398,0.679C8.402,10.777,8.5,10.8,8.598,10.8c0.214,0,0.371-0.104,0.469-0.182l2.554-1.988   c0.205-0.161,0.319-0.368,0.319-0.584c0.001-0.204-0.098-0.394-0.277-0.536c-0.871-0.687-1.747-1.369-2.625-2.049   C8.698,5.2,8.208,5.294,8.012,5.65C7.951,5.762,7.917,5.9,7.914,6.062C7.91,6.198,7.91,6.333,7.91,6.469H0.87l0-1.262   C0.871,4.791,1.208,4.453,1.624,4.453z M8.71,6.64c-0.001-0.134-0.001-0.269,0-0.419c0.784,0.607,1.566,1.217,2.349,1.833   L8.71,9.882l0.001-0.646c0-0.221-0.18-0.4-0.4-0.4h-7.44V7.268h7.44c0.221,0,0.4-0.179,0.4-0.4L8.71,6.64z M5.658,19.547   c-0.913,0-1.656-0.744-1.656-1.657s0.743-1.657,1.656-1.657s1.656,0.744,1.656,1.657S6.571,19.547,5.658,19.547z M5.658,15.433   c-1.219,0-2.232,0.892-2.424,2.057H1.623c-0.415,0-0.753-0.338-0.753-0.753l0-2.232h14.222v2.985H8.082   C7.89,16.324,6.876,15.433,5.658,15.433z M19.169,19.547c-0.913,0-1.655-0.744-1.655-1.657s0.742-1.657,1.655-1.657   s1.656,0.744,1.656,1.657S20.083,19.547,19.169,19.547z M21.593,17.49c-0.191-1.166-1.205-2.057-2.424-2.057   c-1.218,0-2.231,0.892-2.423,2.057h-0.854v-4.966h7.237l-0.01,4.966H21.593z"></path><circle cx="2.628" cy="11.514" r="0.384" ></circle><circle cx="4.124" cy="11.514" r="0.384"></circle><circle cx="5.621" cy="11.514" r="0.384"></circle><circle cx="5.661" cy="17.89" r="0.701"></circle><circle cx="19.123" cy="17.89" r="0.701"></circle></g></svg>
+                    <p class="d-inline para-ini">Livraison gratuite</p>
+                    <p class="d-inline para-sec">Pour toute commande de plus de 300$</p>
+                </div>
+                <div class="service-items d-flex justify-content-center align-items-center flex-column">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px" style="max-width:100%" height="100%"><title>reexport-export-refund-send-back-shipping</title><g data-name="Layer 1" ><path d="M61,28a1,1,0,0,0-1-1H47V7a1,1,0,0,0-1-1H18a1,1,0,0,0-1,1V27H4a1,1,0,0,0-1,1V49a1,1,0,0,0,1,1H37a13,13,0,1,0,24-9.992ZM36,8v4H28V8ZM19,8h7v5a1,1,0,0,0,1,1H37a1,1,0,0,0,1-1V8h7V27H19ZM18,29h4v4H14V29ZM5,29h7v5a1,1,0,0,0,1,1H23a1,1,0,0,0,1-1V29h7V48H5ZM33,48V29H59v7.7A12.978,12.978,0,0,0,36.363,48Zm16,8A11,11,0,1,1,60,45,11.013,11.013,0,0,1,49,56Z" ></path><rect x="11" y="44" width="2" height="2" ></rect><rect x="15" y="44" width="2" height="2" ></rect><rect x="21" y="23" width="2" height="2" ></rect><rect x="25" y="23" width="2" height="2"></rect><rect x="29" y="23" width="2" height="2"></rect><path d="M51,38v2a4.985,4.985,0,0,1,2.237,9.447l.595-.892-1.664-1.11-2,3a1,1,0,0,0,.277,1.387l3,2,1.11-1.664-.992-.661A7,7,0,0,0,51,38Z"></path><path d="M44.555,36.168l-1.11,1.664.992.661A7,7,0,0,0,47,52V50a4.985,4.985,0,0,1-2.237-9.447l-.595.892,1.664,1.11,2-3a1,1,0,0,0-.277-1.387Z"></path><rect x="7" y="44" width="2" height="2"></rect></g></svg>
+                    <p class="d-inline para-ini">Garantie 90 jours.</p>
+                    <p class="d-inline para-sec">Notre objectif est votre satisfaction</p>
+                </div>
+                <div class="service-items d-flex justify-content-center align-items-center flex-column">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%"><path d="M50,20.993c-11.572,0-20.986,9.416-20.986,20.988c0,11.573,9.416,20.986,20.986,20.986c11.572,0,20.988-9.414,20.988-20.986  S61.572,20.993,50,20.993z M50,59.967c-9.918,0-17.988-8.067-17.986-17.986c0-9.918,8.068-17.988,17.986-17.988  s17.988,8.069,17.988,17.988C67.988,51.898,59.918,59.968,50,59.967z M82.615,14.605l-65.232,0.001  c-3.941,0-7.168,3.216-7.168,7.169v40.411c0,3.954,3.227,7.169,7.18,7.169h14.668v-3H17.395c-2.311,0-4.18-1.87-4.18-4.169V21.775  c0-2.299,1.871-4.17,4.168-4.17h65.232c2.301,0,4.17,1.871,4.17,4.17v40.411c0,2.299-1.871,4.168-4.17,4.169H67.947v3h14.668  c3.953,0,7.17-3.216,7.17-7.169V21.775C89.785,17.822,86.568,14.605,82.615,14.605z M50.359,33.853c0.889,0,1.596,0.317,2.121,0.952  c0.527,0.635,0.793,1.592,0.793,2.873h4.625c0-2.081-0.531-3.773-1.604-5.081c-1.064-1.313-2.543-2.095-4.432-2.361v-3.474h-2.564  v3.425c-1.908,0.191-3.438,0.865-4.592,2.016c-1.152,1.153-1.729,2.637-1.729,4.438c0,1.046,0.168,1.945,0.504,2.705  c0.336,0.758,0.805,1.417,1.404,1.977c0.604,0.563,1.316,1.063,2.17,1.488c0.846,0.434,1.848,0.866,3.012,1.305  c1.162,0.438,1.982,0.915,2.473,1.438c0.482,0.519,0.729,1.214,0.729,2.089c0,0.843-0.271,1.512-0.813,2.009  c-0.545,0.496-1.287,0.744-2.227,0.744c-1.131,0.001-1.998-0.339-2.605-1.021c-0.604-0.676-0.9-1.646-0.9-2.921l-4.627,0.001  c0,2.188,0.602,3.939,1.803,5.259c1.201,1.316,2.895,2.1,5.082,2.328l0.002,3.169l2.543-0.001v-3.185  c1.982-0.203,3.541-0.871,4.672-2.002s1.697-2.604,1.697-4.418c0.002-0.97-0.148-1.82-0.449-2.555  c-0.297-0.729-0.729-1.386-1.293-1.949c-0.566-0.57-1.26-1.083-2.084-1.536c-0.818-0.454-1.867-0.938-3.145-1.448  c-1.273-0.512-2.146-1.014-2.615-1.504c-0.471-0.491-0.703-1.145-0.703-1.952c0-0.875,0.238-1.562,0.721-2.057  C48.809,34.1,49.484,33.853,50.359,33.853z M26.328,62.039v-3h-8.156l-0.002,3H26.328z M26.33,21.922h-8.16v3h8.16V21.922z   M73.672,62.039h8.158l-0.002-3h-8.156V62.039z M81.83,21.923h-8.16l0.002,3h8.158V21.923L81.83,21.923z M39.178,78.797h3V66.354h-3  V78.797z M57.822,78.797h3V66.354h-3V78.797z M48.5,85.395h3V66.355h-3V85.395z"></path></svg>
+                    <p class="d-inline para-ini">Paiement sécurisé.</p>
+                    <p class="d-inline para-sec">Nous acceptons Visa et MasterCard</p>
+                </div>
+                <div class="service-items d-flex justify-content-center align-items-center flex-column">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;max-width:100%" xml:space="preserve" height="100%"><g ><path d="M98,54c0-5.7-2.6-10.4-6.1-11.7C91,20,72.6,2,50,2C27.4,2,9,20,8.1,42.3C4.6,43.6,2,48.3,2,54c0,6.7,3.5,12,8,12h4.4   c0.8,2.3,3,4,5.6,4c3.3,0,6-2.7,6-6V44c0-3.3-2.7-6-6-6c-2.6,0-4.8,1.7-5.6,4h-2.3c0.5-9,4-17.1,9.7-23.4l4.8,4.8   c0.7,0.7,1.9,0.8,2.7,0.1c11.4-10,30-10,41.4,0c0.4,0.3,0.8,0.5,1.3,0.5c0.5,0,1-0.2,1.4-0.6l4.8-4.8c5.6,6.3,9.2,14.4,9.7,23.4   h-2.3c-0.8-2.3-3-4-5.6-4c-3.3,0-6,2.7-6,6v20c0,3.3,2.7,6,6,6c2.6,0,4.8-1.7,5.6-4H88v6c0,9.9-8.1,18-18,18h-6.4   c-0.8-2.3-3-4-5.6-4H46c-3.3,0-6,2.7-6,6s2.7,6,6,6h12c2.6,0,4.8-1.7,5.6-4H70c12.1,0,22-9.9,22-22v-6.4C95.5,64.3,98,59.7,98,54z    M58,94H46c-1.1,0-2-0.9-2-2s0.9-2,2-2h12c1.1,0,2,0.9,2,2S59.1,94,58,94z M20,42c1.1,0,2,0.9,2,2v20c0,1.1-0.9,2-2,2   c-1.1,0-2-0.9-2-2V44C18,42.9,18.9,42,20,42z M14,62h-4c-1.9,0-4-3.4-4-8s2.1-8,4-8h4V62z M71.9,19.3c-12.4-9.7-31.3-9.7-43.7,0   l-3.5-3.5C31.4,9.7,40.2,6,50,6c9.8,0,18.6,3.7,25.4,9.8L71.9,19.3z M80,66c-1.1,0-2-0.9-2-2V44c0-1.1,0.9-2,2-2c1.1,0,2,0.9,2,2   v20C82,65.1,81.1,66,80,66z M90,62h-4V46h4c1.9,0,4,3.4,4,8S91.9,62,90,62z"></path></g></svg>
+                    <p class="d-inline para-ini">24h/24 et 7j/7</p>
+                    <p class="d-inline para-sec">Nous répondrons à toutes vos questions</p>
+                </div>
+            </section>
+            <section class="big-sale d-flex ">
+                <div class="items-sale back1 d-flex justify-content-center align-items-center flex-column">
+                    <label for="" style="margin-top: 20px;font-size: 13px;font-weight: bold;" class="font-color">À PARTIR DE 19,00$</label>
+                    <h1 style="margin-top:10px;margin-bottom:30px">La vente a commencé.</h1>
+                    <label for="" style="font-size: 15px;margin-bottom: 2px;">Bénéficiez de votre réduction jusqu'au</label>
+                    <label for="" style="font-size: 15px;"><strong>30 decembre 2024.</strong> DÉPÊCHEZ-VOUS !</label>
+                    <button class="btn d-inline" style="margin-top: 30px;">acheter</button>
+                </div>
+                <div class="items-sale back2 d-flex flex-column justify-content-center">
+                    <label for="" class="font-color" style="font-size: 12px;font-weight: bold;">15% DE RÉDUCTION POUR LA PREMIÈRE COMMANDE</label>
+                    <h1>Offre pour les nouveaux membres.</h1>
+                </div>
+            </section>
+            <section class="new-arrivage d-flex align-items-center flex-column" id="nouveau-arrivage">
+                <div class="entete d-flex flex-column align-items-center" style="gap: 15px;">
+                    <span style="font-size: 12px;font-weight: bold;" class="font-color">RÉCEMMENT AJOUTÉ</span>
+                    <h1>Nouvelles Arrivages</h1>
+                    <hr class="back-color" style="height: 3px;width: 100px;margin: 0px;">
+                    <span style="color: rgb(134, 134, 134);">Tout ce dont vous avez besoin pour un son exceptionnel !</span>
+                </div>
+                <div class="produit d-flex">
+                    <button class="btn-slide-gauche" onclick="carouselle('gauche','.new-arrivage .produit',0)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                        <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/>
+                        </svg>
+                    </button>
+                    <button class="btn-slide-droite" onclick="carouselle('droite','.new-arrivage .produit',0)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="mega-sale center-taille">
+                <div class="produit-sale d-flex">
+                    <div class="div1 d-flex flex-column align-items-center justify-content-center">
+                        <label for="" style="font-size:12px;color: rgb(145, 145, 145);font-weight: bold;margin-bottom: 10px;">TARIFS SPÉCIAUX SUR LA BATTERIE</label>
+                        <h1>Méga vente.</h1>
+                        <label for="" style="font-size: 14px;">À partir de <span style="color: green;font-weight: bold;">139,99 $</span></label>
+                        <label for="" style="margin-top: 30px;color: gray;">Achetez maintenant ou regrettez plus tard.</label>
+                        <div class="d-flex" style="margin-top: 20px;">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <label for="" style="font-weight: bold;font-size: 25px;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 13px;">Jours</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgb(226, 226, 226);">
+                                <label for="" style="font-weight: bold;font-size: 25px;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 13px;">Heures</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgb(226, 226, 226);">
+                                <label for="" style="font-weight: bold;font-size: 25px;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 13px;">Minutes</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgb(226, 226, 226);">
+                                <label for="" style="font-weight: bold;font-size: 25px;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 13px;">Secondes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div2 d-flex flex-column justify-content-center">
+                        <label for="" style="font-size: 14px;font-weight: bold;">PLUS VENDU</label>
+                        <h1 style="font-weight: bold;margin-top: 20px;margin-bottom: 20px;">Guitare MartinG56Q.</h1>
+                        <label for=""><span class="font-color" style="font-size: 20px;margin-right: 5px;"><strong>$299.00</strong></span> <del>310.00</del></label>
+                        <a href="#best-intru"><button class="btn btn-achat1" style="margin-top: 30px;">acheter</button></a>
+                    </div>
+                </div>
+                <div class="produit-desc d-flex">
+                    <div class="desc desc1">
+                        <h2>Guitars</h2>
+                        <hr style="height: 2.5px;width: 50px;" class="font-color">
+                        <label for="">Acoustic Guitars</label>
+                        <label for="">Electric Guitars</label>
+                        <label for="">Ukuleles</label>
+                        <label for="">Left-Handed</label>
+                    </div>
+                    <div class="desc desc2">
+                        <h2>Drums</h2>
+                        <hr style="height: 2.5px;width: 50px;" class="font-color">
+                        <label for="">Acoustic Drums</label>
+                        <label for="">Electric Drums</label>
+                        <label for="">Bass Drums</label>
+                        <label for="">Drum Machines</label>
+                    </div>
+                    <div class="desc desc3">
+                        <h2>Orchestrales</h2>
+                        <hr style="height: 2.5px;width: 50px;" class="font-color">
+                        <label for="">Violins</label>
+                        <label for="">Trumpets</label>
+                        <label for="">Double Basses</label>
+                        <label for="">Xylophones</label>
+                    </div>
+                </div>
+                <div class="concert d-flex flex-column justify-content-center">
+                    <label for="" style="font-size: 13px;" class="font-color">PROMOTION</label>
+                    <h1>Donnez un concert.</h1>
+                    <label for="">Achetez n'importe quel instrument d'orchestre avec <span style="color: green;">une réduction de 15 %.</span></label>
+                    <label for="">L'offre est valable uniquement du 01 au 26 juin pour les nouveaux clients uniquement.</label>
+                    <a href="#best-price"><button class="btn">Parcourir</button></a>
+                </div>
+            </section>
+            <section class="best-intru" id="best-intru">
+                <div class="entete d-flex flex-column align-items-center" style="gap: 15px;">
+                    <span style="font-size: 12px;font-weight: bold;" class="font-color">NOTRE CHOIX</span>
+                    <h1>Les plus vendus.</h1>
+                    <hr class="back-color" style="height: 3px;width: 100px;margin: 0px;">
+                    <span style="color: rgb(134, 134, 134);">Cliquez sur l'image pour ouvrir la fiche produit avec la description complète.</span>
+                </div>
+                <div class="produit d-flex">
+                    <button class="btn-slide-gauche" onclick="carouselle('gauche','.best-intru .produit',1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                        <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/>
+                        </svg>
+                    </button>
+                    <button class="btn-slide-droite" onclick="carouselle('droite','.best-intru .produit',1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="guitar-desc d-flex">
+                <div class="d-flex align-items-center img">
+                    <img src="../Img/guitar1.webp" alt="">
+                </div>
+                <div class="message d-flex flex-column justify-content-center">
+                    <label for="" class="font-color" style="font-size: 13px;font-weight: bold;">GUITARE DU MOIS</label>
+                    <h1>Guitar Peacock RD200.</h1>
+                    <hr class="back-color" style="height: 3px;width: 80px;margin: 0px;">
+                    <p>Peacock RD200 est une guitare simple mais élégante et 
+                        pratique spécialement conçue pour les débutants et les étudiants. 
+                        Ce modèle peut être votre première guitare, peu importe qui vous êtes, 
+                        quel âge vous avez ou quel style de musique vous souhaitez jouer. 
+                        Avec les fonctionnalités classiques qui font la renommée de Peacock, 
+                        le RD200 est un excellent choix pour tous ceux qui aiment les choses 
+                        accrocheuses. Il y a plus de couleurs, demandez à notre équipe d'assistance.
+                        C'est maintenant votre chance idéale de devenir l'heureux propriétaire de la
+                        guitare électrique Peacock RD200. Nous avons considérablement réduit 
+                        le prix de ce modèle. En avril seulement, vous pouvez l'acheter à partir 
+                        de 199,00$ ! Veuillez noter que l'étui de cette guitare est vendu séparément.
+                        Ne manquez pas votre chance d'acquérir une guitare haut de gamme !</p>
+                    <div class="d-flex" style="margin-top: 20px;">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <label for="" style="font-weight: bold;font-size: 30px;">0</label>
+                            <label for="" style="color: rgb(192, 192, 192);font-size: 15px;">Jours</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgba(226, 226, 226, 0.418);">
+                            <label for="" style="font-weight: bold;font-size: 30px;">0</label>
+                            <label for="" style="color: rgb(192, 192, 192);font-size: 15px;">Heures</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgb(226, 226, 226,0.418);">
+                            <label for="" style="font-weight: bold;font-size: 30px;">0</label>
+                            <label for="" style="color: rgb(192, 192, 192);font-size: 15px;">Minutes</label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgb(226, 226, 226,0.418);">
+                            <label for="" style="font-weight: bold;font-size: 30px;">0</label>
+                            <label for="" style="color: rgb(192, 192, 192);font-size: 15px;">Secondes</label>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <section class="best-price d-flex flex-column align-items-center" id="best-price">
+                <div class="entete d-flex flex-column align-items-center" style="gap: 15px;">
+                    <span style="font-size: 12px;font-weight: bold;" class="font-color">SHOP</span>
+                    <h1>Meilleurs Prix</h1>
+                    <hr class="back-color" style="height: 3px;width: 100px;margin: 0px;">
+                    <span style="color: rgb(134, 134, 134);">Achetez un instrument de musique dont vous avez toujours rêvé.</span>
+                    <nav>
+                        <ul class="d-flex justify-content-center">
+                            <li class="list-items list-active" onclick="ChangeData(0)" id="0">Guitars Electric</li>
+                            <li class="list-items" onclick="ChangeData(1)"  id="1">Guitars Accoustic</li>
+                            <li class="list-items" onclick="ChangeData(2)"  id="2">Drums</li>
+                            <li class="list-items" onclick="ChangeData(3)"  id="3">Orchestrales</li>
+                            <li class="list-items" onclick="ChangeData(4)"  id="4">Autres</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="produit d-flex"></div>
+                <div class="drum-best d-flex align-items-center justify-content-center">
+                    <div class="drum-desc d-flex flex-column justify-content-center">
+                        <label for="" class="font-color" style="font-size: 13px;font-weight: bold;">BATTERIE</label>
+                        <h1>Horton Brown Maple 5-Piece Shell Pack.</h1>
+                        <p>Batterie électronique 5 pièces en érable avec caisse 
+                        claire de 12", grosse caisse de 18", toms de 10/10/12", 2 cymbales crash de 12", cymbale ride de 13", charley de 12".</p>
+                    </div>
+                    <div class="drum-price d-flex flex-column justify-content-center">
+                        <del>$3,100.99</del>
+                        <label for="">$2,599</label>
+                        <a href="#Onsale"><button class="btn btn-achat">acheter</button></a>
+                    </div>
+                    <div class="drum-img">
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="main-transparent">
+            <section class="special-price">
+                <div class=" div d-flex flex-column justify-content-center">
+                    <div class="content-mess">
+                        <label for="" class="font-color" style="font-size: 13px;font-weight: bold;">PROMO</label>
+                        <h1>Prix spéciaux sur les caisses claires pour les débutants.</h1>
+                        <hr class="font-color" style="height: 2px;width: 100px;">
+                        <p>Vous commencez tout juste à apprendre à jouer de la batterie ? Jetez un œil à nos offres spéciales!</p>
+                    </div>
+                    <div class="d-flex special-prod">
+                        <div class="d-flex flex-column justify-content-center div-special">
+                            <label for="" class="font-color" style="font-size: 13px;font-weight: bold;">SNARE DRUMS</label>
+                            <h2>Ericson White</h2>
+                            <img src="../Img/backBatt1.webp" alt="">
+                            <span style="color: green;font-weight: bold;">$115.00</span>
+                            <span>Voir plus details</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center div-special">
+                            <label for="" class="font-color" style="font-size: 13px;font-weight: bold;">DRUMS</label>
+                            <h2>Ericson B&W</h2>
+                            <img src="../Img/backBatt.webp" alt="">
+                            <span style="color: green;font-weight: bold;">$115.00</span>
+                            <span>Voir plus details</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="princ-white">
+            <section class="d-flex flex-column on-sale" id="Onsale">
+                <div class="d-flex div-sale">
+                    <div class="sale1 d-flex flex-column justify-content-center">
+                        <label for="" class="font-color" style="font-size: 13px;font-weight: bold;">JUSQU'À 40% DE RÉDUCTION</label>
+                        <h1>En soldes.</h1>
+                        <hr class="back-color" style="height: 2px;width: 100px;">
+                        <p style="font-size: 18px;color: gray;">La promotion se termine très bientôt. Dépêche-toi!</p>
+                        <div class="d-flex" style="margin-top: 20px;">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <label for="" style="font-weight: bold;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 12px;">Jours</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgba(226, 226, 226, 0.418);">
+                                <label for="" style="font-weight: bold;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 12px;">Heures</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgb(226, 226, 226,0.418);">
+                                <label for="" style="font-weight: bold;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 12px;">Minutes</label>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center" style="border-left: 1px solid rgb(226, 226, 226,0.418);">
+                                <label for="" style="font-weight: bold;">0</label>
+                                <label for="" style="color: rgb(192, 192, 192);font-size: 12px;">Secondes</label>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="sale2">
+                        <div class="produit d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="orchestre d-flex justify-content-center flex-column">
+                    <label for="" style="font-size: 12px;">PRÊT À ACHETER ?</label>
+                    <h3>Semaine de vente d'orchestres.</h3>
+                </div>
+                <div class="promo d-flex justify-content-center">
+                    <div class="promo1 d-flex flex-column justify-content-center">
+                        <label for="" class="font-color" style="font-size: 13px;font-weight: bold;">OFFRE SPÉCIALE</label>
+                        <h1>Ensemble de batterie <br>Red Wings.</h1>
+                        <label for="">seulement 1 299 $</label>
+                        <a href="#best-price"><button class="btn back-black btn-size btn-achat">acheter</button></a>
+                    </div>
+                    <div class="promo2 d-flex flex-column justify-content-center">
+                        <label for="" style="font-size: 13px;font-weight: bold;">PROMOTION</label>
+                        <h1>Guitares <br>exclusives.</h1>
+                        <label for=""></label>
+                        <a href="#nouveau-arrivage"><button class="btn back-black btn-size btn-achat1">acheter</button></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="justify-content-center entete">
+            <div class="d-flex justify-content-between align-items-center">
+                <p>Tarifs spéciaux pour les nouveaux clients. — Inscrivez-vous pour
+                 bénéficier de 15% de réduction sur votre commande !</p>
+                 <button class="btn btn-size btn-achat">s'incrire</button>
+            </div>
+        </section>
+        <section class="princ d-flex justify-content-center">
+            <div class="center-taille d-flex justify-content-center align-items-center">
+                <div class="items-foot d-flex flex-column justify-content-center">
+                    <div class="foot-tete">
+                        <div class="d-flex align-items-center">
+                            <img src="../Img/logo-removebg-preview.png" alt=""  class="d-flex justify-content-center align-items-center" style="height: 55px;width: 55px;background-color: white;border-radius: 28px;">
+                            <h2 style="color: white;margin-left: 20px;">Fax Music</h2>
+                        </div>
+                        <p style="font-size: 14px;margin-top: 20px;" class="font-foot">Nous sommes votre arrêt ultime si vous recherchez 
+                            des instruments de musique, du matériel ou des fournitures. 
+                            Expédition dans le monde entier!</p>
+                    </div>
+                    <div>
+                        <h4 style="color: white;margin-bottom: 20px;margin-top: 20px;">Liens rapides.</h4>
+                        <ul class="d-flex flex-column justify-content-center">
+                            <li>À propos de nous</li>
+                            <li>Affilié</li>
+                            <li>Carrière</li>
+                            <li>Contacts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="items-foot d-flex flex-column justify-content-center">
+                    <div class="foot-tete d-flex align-items-center">
+                        <div class="d-flex flex-column justify-content-center" >
+                            <label for="" class="font-foot">Avoir une question?</label> 
+                            <label for="" class="font-foot">Appelez-nous à tout moment !</label>
+                            <hr class="font-foot" style="height: 1px;width: 120px;">
+                            <span class="font-color" style="font-weight: bold;">034 16 744 62</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: white;margin-bottom: 20px;margin-top: 20px;">Company.</h4>
+                        <ul class="d-flex flex-column justify-content-center">
+                            <li>Suivi de commande</li>
+                            <li>Service client</li>
+                            <li>Retour</li>
+                            <li>Support produit</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="items-foot d-flex flex-column justify-content-center">
+                    <div class="foot-tete d-flex align-items-center">
+                        <div class="d-flex flex-column justify-content-center" >
+                            <label for="" class="font-foot">Écrivez-nous ! </label> 
+                            <label for="" class="font-foot">sommes là 24h/24 et 7j/7 !</label>
+                            <hr class="font-foot" style="height: 1px;width: 120px;">
+                            <span class="font-color" style="font-weight: bold;">faxMusic@gmail.com</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: white;margin-bottom: 20px;margin-top: 20px;">Shop.</h4>
+                        <ul class="d-flex flex-column justify-content-center">
+                            <li>Nouvelles Arrivées</li>
+                            <li>Instruments</li>
+                            <li>Meilleures ventes</li>
+                            <li>Vente</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="items-foot d-flex flex-column justify-content-center">
+                    <div class="foot-tete d-flex flex-column justify-content-center">
+                        <input type="text" placeholder="Email">
+                        <button class="btn">Abonnez-vous</button>
+                    </div>
+                    <div>
+                        <h4 style="color: white;margin-bottom: 20px;margin-top: 20px;">Service client.</h4>
+                        <ul class="d-flex flex-column justify-content-center">
+                            <li>Politique</li>
+                            <li>Termes et conditions</li>
+                            <li>Expédition</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bas d-flex justify-content-center">
+            <div class="center-taille d-flex justify-content-between align-items-center">
+                <p>© Créé par</p>
+                <p>Tous droits réservés</p>
+            </div>
+        </section>
+    </footer>
+    <template id="template-produit">
+        <div class="items-produit d-flex flex-column">
+            <img src="../Img/485.jpeg" alt="">
+            <label for="" class="description">Ericson Black&White Snare Drum</label>
+            <label for="" class="price">$115.00</label>
+            <button class="btn back-black btn-size btn-achat">acheter</button>
+        </div>
+    </template>
+    <template id="monpanier">
+        <div class="d-flex justify-content-center panier-float ">
+            <div class="panier-princ">
+                <div class="d-flex justify-content-between align-items-center panier-tete ">
+                    <label for="">Mon Panier</label>
+                    <button class="exit" onclick="hiddenCart()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="panier-produit">
+                    <label for="" style="margin:20px 0px 20px 20px;font-size: 13px;font-weight: bold;">produit</label>
+                    <div class="d-flex flex-column prod-princ align-items-center">
+                        <div class="d-flex justify-content-between prod-items align-items-center">
+                            <div class="d-flex align-items-center"> 
+                                <img src="../Img/10.jpeg" alt="">
+                                <label for="" class="desc"></label>
+                                <input type="number" name="" id="" min="1">
+                                <label for="" class="panier-price">$123.00</label>
+                            </div>
+                            <button class="delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <label for="" style="margin:20px 0px 20px 20px;" class="total">TOTAL : $300.00</label>
+                </div>
+                <div class="information d-flex flex-column ">
+                    <form action="" class="flex-column d-flex align-items-center">
+                        <input type="text" placeholder="name" required>
+                        <input type="main" placeholder="Email" required>
+                        <input type="text" placeholder="phone" required>
+                        <textarea  name ="" placeholder="commentaire"></textarea>
+                        <button class="btn back-black btn-size btn-achat">Acheter</button>
+                    </form>    
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="panier-vide">
+        <div class="d-flex justify-content-center align-items-center panier-float ">
+            <div class="panier-princ-vide">
+                <div class="panier-tete d-flex justify-content-between align-items-center">
+                    <label for="">Mon Panier</label>
+                    <button class="exit" onclick="hiddenCart()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mess d-flex flex-column justify-content-center align-items-center">
+                    <label for="">Aucune produit dans votre panier</label>
+                    <label for="">Continuez vos achats pour ajouter le produit à votre panier</label>
+                </div>
+            </div>
+        </div>        
+    </template>
+</body>
+<script src="../js/InsertData.js"></script>
+<script src="../js/carouselle.js"></script>
+</html>

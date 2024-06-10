@@ -1,0 +1,475 @@
+@media (max-width:1450px) {
+    main .guitar-desc .message{
+        width: 55%;
+    }
+}
+@media  (max-width:1175px) {
+    .description{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    main .main-princ{
+        height: 800px;
+        width: 100%;
+        background:url("../Img/backMusic.webp");
+        background-size: 100% 100%;
+    }
+    main .main-princ .main-center{
+        width: var(--tailleCenter);
+        height: 100%;
+        padding-right: 30%;
+        padding-left: 80px;
+    }
+    main .main-princ .main-center p{
+        font-size: 40px;
+        font-weight:500;
+    }
+    main .big-sale{
+        width: var(--tailleCenter);
+        height: 400px;
+        margin-top: 40px;
+        gap: 25px;
+    }
+    main .big-sale .items-sale{
+        height: 100%;
+        width: calc(var(--tailleCenter)/2);
+        color: white;
+        padding: 30px;
+    }
+    main .big-sale .back2{
+        background: url("../Img/guitar-15.webp") 99.22% 50.89% / cover no-repeat;
+        padding-right: 10%;
+        padding-left: 100px;
+        color: var(--blackColor);
+        gap: 40px;
+    }
+    main .new-arrivage .produit .items-produit{
+        min-width: calc(var(--tailleCenter)/4);
+    }
+    main .best-intru .produit .items-produit{
+        min-width: calc(var(--tailleCenter)/4);
+    }
+}
+@media (max-width:974px) {
+    main .main-princ{
+        background-size: cover;
+        background-position-x:right;
+    }
+    main .main-princ .main-center{
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+    main .big-sale{
+        flex-direction: column;
+        height: 800px;
+    }
+    main .big-sale .items-sale{
+        height: 100%;
+        width: 100%;
+        color: white;
+        padding: 30px;
+    }
+    main .big-sale .items-sale h1{
+        font-size: 40px;
+    }
+    main .big-sale .back2{
+        background: url("../Img/guitar-15.webp") 99.22% 50.89% / cover no-repeat;
+        padding-right: 10%;
+        padding-left: 100px;
+        color: var(--blackColor);
+        gap: 40px;
+    }
+    main .service .service-items .para-ini{
+        font-size: 19px;
+    }
+    main .new-arrivage .produit{
+        height: 550px;
+
+    }
+    main .best-intru .produit{
+        height: 550px;
+    }
+    main .new-arrivage .produit .items-produit {
+        min-width: calc(100%/2);
+    }
+    main .best-intru .produit .items-produit {
+        min-width: calc(100%/2);
+    }
+    main .main-transparent .special-price .div{
+        width: auto;
+    }
+    main .best-price .produit{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    main .best-price .produit .items-produit{
+        width: calc(100%/2 - 30px);
+    }
+    main .best-price .drum-best{
+        width: 100%;
+    }
+}
+@media (max-width:880px) {
+    main .best-price .drum-best{
+        flex-direction: column;
+        height: auto;
+    }
+    main .best-price .drum-best .drum-desc{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        padding-left: 50px;
+        margin-top: 50px;
+    }
+    main .best-price .drum-best .drum-price{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        padding-left: 50px;
+        margin-top: 50px;
+    }
+    main .best-price .drum-best .drum-img{
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        padding-left: 50px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    main .mega-sale .concert{
+        padding-left: 50px;
+    }
+    main .guitar-desc{
+        flex-direction: column;
+        height: auto;
+    }
+    main .guitar-desc .message{
+        height: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+    }
+    main .guitar-desc .img{
+        height: 600px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .guitar-desc .img img{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width:815px) {
+    main .service{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .service .service-items{
+        width: 100%;
+        height: 300px;
+    }
+    main .service .service-items .para-ini{
+        font-size: 30px;
+    }
+    main .service .service-items .para-sec{
+        font-size: 15px;
+    }
+    main .mega-sale .produit-sale{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    main .mega-sale .produit-sale .div1{
+        width: 100%;
+        height: 300px;
+    }
+    main .mega-sale .produit-sale .div2{
+        width: 100%;
+        height: 300px;
+    }
+    main .mega-sale .produit-desc{
+        flex-direction: column;
+        height: auto;
+    }
+    main .mega-sale .produit-desc .desc{
+        height: 300px;
+        width: 100%;
+    }
+    main .princ-white .on-sale .div-sale{
+        flex-direction: column;
+    }
+    main .princ-white .on-sale .div-sale .sale1{
+        height: 400px;
+        width: 100%;
+    }
+    main .princ-white .on-sale .div-sale .sale2{
+        height: 400px;
+        width: 100%;
+    }
+    main .princ-white .on-sale .produit .items-produit{
+        width: 100%/3;
+        height: 100%;
+    }
+    main .princ-white .on-sale .div-sale .sale1 div label{
+        font-size: 30px;
+    }
+    main .princ-white .promo{
+        flex-direction: column;
+        height: auto;
+    }
+    main .princ-white .promo .promo1{
+        width: 100%;
+        height: 400px;
+    }
+    main .princ-white .promo .promo2{
+        width: 100%;
+        height: 400px;
+    }
+    footer .princ {
+        height: auto;
+    }
+    footer .princ .center-taille{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    footer .princ .center-taille .items-foot{
+        width: 90%;
+        padding-left: 30px;
+        margin: 10px 0px 10px 0px;
+    }
+    footer .foot-tete input,button{
+        width: 300px;
+    }
+    main .main-transparent .special-price .div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    main .main-transparent .special-price .div .content-mess{
+        padding: 0px 50px 0px 50px;
+    }
+    main .main-transparent .special-price .div .special-prod{
+        padding: 0%;
+        justify-content: center;
+    }
+    main .princ-white .on-sale .div-sale{
+        padding: 0;
+    }
+    }
+    @media (max-width:625px) {
+        main .new-arrivage .produit .items-produit {
+            min-width: 100%;
+        }
+        main .best-intru .produit .items-produit {
+            min-width: 100%;
+        }   
+        main .best-price .produit .items-produit{
+            width: 100%;
+        }
+        main .guitar-desc .message{
+            padding: 50px 50px 100px 50px;
+        }
+        main .best-price .entete{
+            max-width: 100%;
+        }
+        main .best-price .entete nav{
+            width: 100%;
+        }
+        main .best-price .entete nav ul{
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+        main .main-princ .main-center p {
+            font-size: 30px;
+            font-weight: 500;
+        }
+        main .main-princ .main-center .lab-main{
+            color: white;
+        }
+    }
+    @media (max-width:1062px) {
+        .menu-slide{
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            position: fixed;
+            top: -500px;
+            left: 0;
+            width: 100%;
+            z-index: 30;
+            background-color: var(--blueColor);
+            transition: all 0.5s ease;
+        }
+        .menu-slide .logo{
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-left: 20px;
+        }
+        .menu-slide .logo button{
+            margin-left: auto;
+            margin-right: 10px;
+            height: 40px;
+            width: 40px;
+            border: none;
+            background-color: transparent;
+        }
+        .menu-slide .logo svg{
+            height: 25px;
+            width: 25px;
+            fill: white;
+        }
+        .menu-slide .logo img{
+            height: 40px;
+            width: 40px;
+        }
+        .menu-slide ul{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-slide ul li{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color:white;
+        }
+        .menu-slide .para-wel,.para-cont{
+            color: rgb(87, 80, 80);
+            font-size: 12px;
+        }
+        .menu-slide ul li:hover{
+            color: black;
+        }
+        header .head-nav .nav-center .ul-nav{
+            display: none;
+        }
+        header .btn-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            margin-left: auto;
+            margin-right: 20px;
+            background-color: transparent;
+            border: none;
+        }
+        header .btn-menu svg{
+            height: 20px;
+            width: 20px;
+            fill: white;
+        }
+        header{
+            height: 70px;
+        }
+        header .head-nav{
+            padding-left: 30px;
+            height: 100%;
+        }
+        header .head-welcome{
+            display: none;
+        }
+        header .head-welcome{
+            width: auto;
+        }
+        header .head-nav .nav-center .logo img{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    @media (max-width:579px) {
+        main .main-transparent{
+            height: auto;
+        }
+        main .main-transparent .special-price .div .special-prod{
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        main .main-transparent .special-price{
+            height: 1500px;
+        }
+        main .main-transparent .special-price .special-prod div{
+            height: 500px;
+            width: 80%;
+        }
+        main .princ-white .on-sale .produit{
+            flex-direction: column;
+            height: auto;
+        }
+        main .princ-white .on-sale .div-sale .sale2{
+            height: auto;
+        }
+        main .princ-white .on-sale .produit .items-produit{
+            width: 100%;
+        }
+        main .main-transparent .special-price .div .content-mess{
+            margin-top: 50px;
+        }
+    }
+    @media (max-width:545px){
+        main .guitar-desc .message{
+            padding: 30px 30px 100px 30px;
+        }
+        main .best-price .drum-best .drum-desc{
+            padding-left: 30px;
+        }
+        main .best-price .drum-best .drum-price{
+            padding-left: 30px;
+        }
+        main .best-price .drum-best .drum-img{
+            padding-left: 30px;
+        }
+        footer .princ .center-taille{
+            width: 95%;
+        }
+        footer .princ .center-taille .items-foot{
+            width: 100%;
+        }
+        footer .entete{
+            display: none;
+        }
+        main .mega-sale .concert{
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            height: auto;
+        }
+        footer .foot-tete input, button{
+            width: 100%;
+        }
+    }
+
+@media (max-height:700px) {
+    .panier-float{
+        display: block;
+        align-items: start;
+    }
+    main .best-price .entete{
+        overflow-x: scroll;
+    }
+    .panier-float{
+        overflow: scroll;
+    }
+}    

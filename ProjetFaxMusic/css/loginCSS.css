@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --JauneColor:rgb(255, 196, 0);
+    --blackColor:rgb(29, 29, 29);
+    --GrayColor:rgb(121, 121, 121);
+    --tailleCenter:1170px;
+    --blueColor:rgb(10, 181, 238);
+}
+body{
+    background-color: var(--blueColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form{
+    height: auto;
+    width: auto;
+}
+.login{
+    background-color: white;
+    height: 650px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.login input,button{
+    height: 50px;
+    width: 85%;
+}
+.login button{
+    background-color: var(--blueColor);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.login input{
+    border-radius: 5px;
+    border: 1px solid rgb(228, 228, 228);
+    padding-left: 20px;
+}
+.login .separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    gap: 5px;
+}
+.login .separator .hr{
+    width: 45%;
+    height: 1px;
+    background-color:  rgb(228, 228, 228);
+}
+.login .facebook{
+    margin-top: 20px;
+    background-color: rgb(1, 96, 204);
+    height: 50px;
+    width: 85%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+}
+.login .google{
+    height: 50px;
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.login .google img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    background-color: white;
+}
+.login .facebook img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+.login .google p{
+    margin: 0;
+    padding: 0;
+}
+.login .facebook p{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:400px) {
+    .login{
+        width: 100vw;
+    }
+}
+@media (max-height:650px) {
+    body{
+        align-items: start;
+    }
+}
